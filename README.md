@@ -22,4 +22,4 @@ Gabriel Gonçalo da Costa / gabrielgoncalo
 
 Lucas da Silva Santos / lucassilva01
 
-![alt text](https://modelodeagenda.com/wp-content/uploads/2021/04/ANUNCIO03.jpg)
+![alt Appointment Book](https://modelodeagenda.com/wp-content/uploads/2021/04/ANUNCIO03.jpg)
