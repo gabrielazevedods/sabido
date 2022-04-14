@@ -31,9 +31,6 @@ Será utilizado HTML, CSS e JavaScript para o Front-end.
 
 Será utilizado o SGBD PostgreSQL para manter os dados.
 
-### Experiência da equipe com as ferramentas
-Os membros da equipe já tiveram experiências prévias com as ferramentas que serão utilizadas em disciplinas cursadas ao longo do curso, porém entraram em consenso que devem estudar e treinar Django para, só então, começarem a codificar.
-
 ## Seção 3: Framework utilizado no projeto
 
 ### Django
