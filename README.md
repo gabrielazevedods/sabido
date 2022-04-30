@@ -10,17 +10,17 @@ SABIDO: Student Appointment Book Integrated with Django On the fly
 SABIDO é um aplicativo desenvolvido com o objetivo de ajudar os estudantes a organizarem suas tarefas e rotinas.
 
 ### Equipe
-Danrley Daniel Moreira Sales / danrleydaniel
+[Danrley Daniel Moreira Sales / danrleydaniel](https://github.com/danrleydaniel)  (Primeiro Gerente)
 
-Douglas Mateus Soares Cândido da Silva / douglascandido
+[Douglas Mateus Soares Cândido da Silva / douglascandido](https://github.com/douglascandido)
 
-Edinalda Cristina Alves de Medeiros / edinaldaufrn
+[Edinalda Cristina Alves de Medeiros / edinaldaufrn](https://github.com/edinaldaufrn)
 
-Gabriel Azevedo dos Santos / gabrielazevedods
+[Gabriel Azevedo dos Santos / gabrielazevedods](https://github.com/gabrielazevedods)
 
-Gabriel Gonçalo da Costa / gabrielgoncalo
+[Gabriel Gonçalo da Costa / gabrielgoncalo](https://github.com/gabrielgoncalo)
 
-Lucas da Silva Santos / lucassilva01
+[Lucas da Silva Santos / lucassilva01](https://github.com/lucassilva01)
 
 ## Seção 2: Linguagem de programação utilizada no projeto
 
