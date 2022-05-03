@@ -60,26 +60,31 @@ Ator: Administrador
 
 ## RF06 - Excluir Aluno
 
+Descrição: Se socilitado, o administrador pode excluir os dados de um determinado aluno.
+
 Ator: Administrador
 
-## RF07 - Alterar Aluno
-Ator: Aluno
-
-## RF08 - Incluir Disciplina
+## RF07 - Incluir Disciplina
 
 Ator: Aluno
 
-A inclusão de uma disciplina solicita os dados Nome da disciplina, Professor da disciplina, Carga horária da disciplina, Código da disciplina, etc.
+Descrição: A inclusão de uma disciplina solicita os dados Nome da disciplina, Professor da disciplina, Carga horária da disciplina, Código da disciplina, etc.
 
 ## RF09 - Alterar Disciplina
+
+Descrição: Alterar informações sobre uma determinada disciplina.
 
 Ator: Aluno
 
 ## RF10 - Visualizar Disciplina
 
+Descrição: Visualizar informações sobre uma determinada disciplina.
+
 Ator: Aluno
 
 ## RF11 - Excluir Disciplina
+
+Descrição: O aluno pode excluir uma determinada disciplina do seu histórico.
 
 Ator: Aluno
 
@@ -95,9 +100,40 @@ Descrição: Permite o aluno estimar a nota mínima que precisa para ser aprovad
 
 Autor: Aluno
 
-## RF14 - Criar Horário (Rotina de aulas) baseado nas disciplinas que estão sendo cursadas no momento, agrupando-as por dia, turno e hora da aula.
+## RF14 - Criar Horário (Rotina de aulas) 
+
+Descrição: Baseado nas disciplinas que estão sendo cursadas no momento, agrupa-las por dia, turno e hora da aula.
 
 Autor: Aluno
+
+## RF14 - Incluir Compromisso
+
+Descrição: A inclusão de um compromisso solicita os atributos Nome do compromisso, Descrição, Nome da disciplina, Data do compromisso.
+
+Ator: Aluno
+
+## RF15 - Alterar Compromisso
+
+Descrição: A alteração de um aluno permite a mudança (Atualização) dos dados já armazenados referentes aos compromissos.
+Ator: Aluno
+
+## RF16 - Visualizar Meus Compromissos
+
+Descrição: Permite o aluno vizualizar uma lista com todos os compromissos em que ele está submetido.
+
+Ator: Aluno
+
+## RF18 - Visualizar Compromisso específico
+
+Descrição: Visualizar as informações de um determinado compromisso.
+
+Ator: Aluno
+
+## RF19 - Excluir Compromisso
+
+Descrição: Excluir um determinado compromisso manualmente ou após o seu prazo ter se expirado.
+
+Ator: Aluno
 
 # Requisitos não-Funcionais
 
