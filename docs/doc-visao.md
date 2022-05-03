@@ -147,3 +147,10 @@ Ator: Aluno
 ## RNF04 - O aplicativo deve ter uma interface amigável, de modo que o mesmo possa ser de fácil compreensão e de fácil usabilidade até mesmo para jovens alunos do ensino fundamental.
 
 
+# Riscos
+
+| Data | Risco | Prioridade | Responsável | Status | Providência/solução |  
+| --- | --- | --- | --- | --- | ---|
+| 02/05/2022 | Não aprendizado das ferramentas utilizadas para o desenvolvimento do projeto | Média | Todos | Vigente | Estudar a fundo as ferramentas e assistir tutoriais sobre as ferramentas.| 
+| 02/05/2022 | Falta de disponibilidade de algum dos integrantes do projeto | Média | Todos | Vigente | Organizar um tempo para dedicação ao desenvolvimento do projeto
+| 02/05/2022 | Não cumprir todos as issues antes da data da entrega de cada tarefa | Baixa | Gerente | Vigente | Solicitar aos desenvolvedores que completem as issues até a data de cada tarefa
