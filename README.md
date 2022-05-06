@@ -1,5 +1,6 @@
-# engenharia-de-software-II
-Repositório para o projeto da disciplina de Engenharia de Software II.
+# SABIDO
+
+Repositório para o projeto da disciplina de Engenharia de Software II: SABIDO (Student Appointment Book Integrated with Django On the fly)
 
 ## Seção 1: Sobre o projeto
 
