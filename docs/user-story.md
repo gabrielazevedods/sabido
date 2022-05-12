@@ -48,3 +48,33 @@
 | **TA01.02** | Descrever o teste de aceitação 02 do US01 |
 | **TA01.03** | Descrever o teste de aceitação 03 do US01 |
 | **TA01.04** | Descrever o teste de aceitação 04 do US01 |
+
+## User story US02 - Criar Página Inicial (Landing page)
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | Criar Landing Page do app, contendo uma navegabilidade amigável para todas as demais funcionalidades |
+
+**Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RNF02          | Responsividade |
+| RNF04          | Interface amigável  |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                               | 
+| **Tamanho Funcional**     | X PF                                | 
+| **Analista**              | Douglas | 
+| **Desenvolvedor**         | Douglas | 
+| **Revisor**               | Gabriel Azevedo                          | 
+| **Testador**              | Douglas                         | 
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA01.01** | Veriificar se os menus e a navegabilidade do app está satisfatória |
+
+
