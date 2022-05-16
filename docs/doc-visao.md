@@ -123,13 +123,13 @@ Descrição: Permite o aluno vizualizar uma lista com todos os compromissos em q
 
 Ator: Aluno
 
-## RF18 - Visualizar Compromisso específico
+## RF17 - Visualizar Compromisso específico
 
 Descrição: Visualizar as informações de um determinado compromisso.
 
 Ator: Aluno
 
-## RF19 - Excluir Compromisso
+## RF18 - Excluir Compromisso
 
 Descrição: Excluir um determinado compromisso manualmente ou após o seu prazo ter se expirado.
 
