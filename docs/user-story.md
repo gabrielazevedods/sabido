@@ -25,8 +25,7 @@
 | RF15          | Alterar Compromisso  |
 | RF16          | Visualizar Meus Compromissos       |
 | RF17          | Visualizar Compromisso específico |
-| RF18          | Visualizar Compromisso  |
-| RF19          | Excluir Compromisso  |
+| RF18          | Excluir Compromisso  |
 
 
 |                           |                                     |
@@ -44,10 +43,10 @@
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA01.01** | Descrever o teste de aceitação 01 do US01 |
-| **TA01.02** | Descrever o teste de aceitação 02 do US01 |
-| **TA01.03** | Descrever o teste de aceitação 03 do US01 |
-| **TA01.04** | Descrever o teste de aceitação 04 do US01 |
+| **TA01.01** | Testar a eficácia e eficiência da funcionalidade de inserção dos dados por meio do uso da GUI do app |
+| **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
+| **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
+| **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
 
 ## User story US02 - Criar Página Inicial (Landing page)
 
@@ -75,6 +74,6 @@
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA01.01** | Veriificar se os menus e a navegabilidade do app está satisfatória |
+| **TA01.01** | Veriificar se a GUI, os menus e a navegabilidade do app está satisfatória por meio de uma pesquisa informal das opiniões dos usuários |
 
 
