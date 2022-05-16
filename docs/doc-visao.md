@@ -88,19 +88,19 @@ Descrição: O aluno pode excluir uma determinada disciplina do seu histórico.
 
 Ator: Aluno
 
-## RF12 - Relatório de todas as disciplinas já cursadas no passado e das que estão sendo cursadas atualmente contendo as notas de cada unidade e a situação (Aprovado / Reprovado / Aprovado por Nota)
+## RF12 - Histórico de Disciplinas
 
-Descrição: Permite o aluno consultar o seu histórico de disciplinas já cursadas, bem como as que estão sendo cursadas no momento, e ver suas notas nelas.
+Descrição: Exibe um relatório de todas as disciplinas já cursadas no passado e que estão sendo cursadas no presente pelo aluno, permite o estudante consultar o seu histórico de notas por unidade em cada disciplina e a sua situação (Aprovado / Reprovado / Aprovado por Nota.
 
 Ator: Aluno
 
-## RF13 - Calculadora e simulação de nota necessária para a aprovação com base em pesos para cada unidade
+## RF13 - Calculadora simuladora de resultado
 
-Descrição: Permite o aluno estimar a nota mínima que precisa para ser aprovado em determinada disciplina com a inserção das notas por unidades e a atribuição de pesos por unidades.
+Descrição: Permite o aluno estimar a nota mínima que precisa para ser aprovado em determinada disciplina com a inserção das notas por unidades para cada disciplina cursada e a atribuição de pesos por unidades.
 
 Autor: Aluno
 
-## RF14 - Criar Horário (Rotina de aulas) 
+## RF14 - Gerar Horário de Aulas 
 
 Descrição: Baseado nas disciplinas que estão sendo cursadas no momento, agrupa-las por dia, turno e hora da aula.
 
@@ -137,14 +137,21 @@ Ator: Aluno
 
 # Requisitos não-Funcionais
 
-## RNF01 - Ao excluir um aluno, deve ser realizada uma Exclusão Lógica, de modo a apenas ocultar tal usuário do sistema, mas não deletar definitivamente suas informações (Apenas se o próprio aluno exigir isso).
+## RNF01 - Persistência de dados 
 
-## RNF02 - O aplicativo deve ser multiplataforma (Computadores, Tablets e Celulares), portanto a responsividade deve ser assegurada.
+Descrição: Ao excluir um aluno, deve ser realizada uma Exclusão Lógica, de modo a apenas ocultar tal usuário do sistema, mas não deletar definitivamente suas informações (Apenas se o próprio aluno exigir isso).
 
+## RNF02 - Responsividade multiplataforma
 
-## RNF03 - O aluno pode optar por receber lembretes por email sobre determinado compromisso, podendo escolher ser lembrado a cada dia ou apenas quando estiver faltando uma semana para o prazo final.
+Descrição: O aplicativo deve ser multiplataforma (Computadores, Tablets e Celulares), portanto a responsividade deve ser assegurada.
 
-## RNF04 - O aplicativo deve ter uma interface amigável, de modo que o mesmo possa ser de fácil compreensão e de fácil usabilidade até mesmo para jovens alunos do ensino fundamental.
+## RNF03 - Notificações 
+
+Descrição: O aluno pode optar por receber lembretes por email sobre determinado compromisso, podendo escolher ser lembrado a cada dia ou apenas quando estiver faltando uma semana para o prazo final.
+
+## RNF04 - Interface intuitiva
+
+Descrição: O aplicativo deve ter uma interface amigável, de modo que o mesmo possa ser de fácil compreensão e de fácil usabilidade até mesmo para jovens alunos do ensino fundamental.
 
 
 # Riscos
