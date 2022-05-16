@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('compromisso/', include('compromisso.urls'))
+    path('compromisso/', include('compromisso.urls')),
+    path('', include('landing_page.urls'))
 ]
 
