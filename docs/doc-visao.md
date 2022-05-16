@@ -70,37 +70,37 @@ Ator: Aluno
 
 Descrição: A inclusão de uma disciplina solicita os dados Nome da disciplina, Professor da disciplina, Carga horária da disciplina, Código da disciplina, etc.
 
-## RF09 - Alterar Disciplina
+## RF08 - Alterar Disciplina
 
 Descrição: Alterar informações sobre uma determinada disciplina.
 
 Ator: Aluno
 
-## RF10 - Visualizar Disciplina
+## RF09 - Visualizar Disciplina
 
 Descrição: Visualizar informações sobre uma determinada disciplina.
 
 Ator: Aluno
 
-## RF11 - Excluir Disciplina
+## RF10 - Excluir Disciplina
 
 Descrição: O aluno pode excluir uma determinada disciplina do seu histórico.
 
 Ator: Aluno
 
-## RF12 - Histórico de Disciplinas
+## RF11 - Histórico de Disciplinas
 
 Descrição: Exibe um relatório de todas as disciplinas já cursadas no passado e que estão sendo cursadas no presente pelo aluno, permite o estudante consultar o seu histórico de notas por unidade em cada disciplina e a sua situação (Aprovado / Reprovado / Aprovado por Nota.
 
 Ator: Aluno
 
-## RF13 - Calculadora simuladora de resultado
+## RF12 - Calculadora simuladora de resultado
 
 Descrição: Permite o aluno estimar a nota mínima que precisa para ser aprovado em determinada disciplina com a inserção das notas por unidades para cada disciplina cursada e a atribuição de pesos por unidades.
 
 Autor: Aluno
 
-## RF14 - Gerar Horário de Aulas 
+## RF13 - Gerar Horário de Aulas 
 
 Descrição: Baseado nas disciplinas que estão sendo cursadas no momento, agrupa-las por dia, turno e hora da aula.
 
