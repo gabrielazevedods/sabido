@@ -106,34 +106,127 @@ Descrição: Baseado nas disciplinas que estão sendo cursadas no momento, agrup
 
 Autor: Aluno
 
-## RF14 - Incluir Compromisso
+## RF14 - Incluir tarefa
 
 Descrição: A inclusão de um compromisso solicita os atributos Nome do compromisso, Descrição, Nome da disciplina, Data do compromisso.
 
 Ator: Aluno
 
-## RF15 - Alterar Compromisso
+## RF15 - Alterar tarefa
 
 Descrição: A alteração de um aluno permite a mudança (Atualização) dos dados já armazenados referentes aos compromissos.
 Ator: Aluno
 
-## RF16 - Visualizar Meus Compromissos
+## RF16 - Visualizar minhas tarefas
 
 Descrição: Permite o aluno vizualizar uma lista com todos os compromissos em que ele está submetido.
 
 Ator: Aluno
 
-## RF17 - Visualizar Compromisso específico
+## RF17 - Visualizar tarefa específicas
 
 Descrição: Visualizar as informações de um determinado compromisso.
 
 Ator: Aluno
 
-## RF18 - Excluir Compromisso
+## RF18 - Excluir tarefa
 
 Descrição: Excluir um determinado compromisso manualmente ou após o seu prazo ter se expirado.
 
 Ator: Aluno
+
+
+## RF19 -  Incluir projeto
+
+Descrição: A inclusão de um novo projeto solicita ao aluno os atributos: Nome do projeto, descrição, Nome da disciplina a qual o projeto pertence e Data do projeto
+
+Ator: aluno
+
+## RF20 -  Alterar projeto
+
+Descrição: A alteração de um projeto permite que o aluno possa alterar um ou mais campos dos projetos que ele cadastradou no sistema
+
+Ator: aluno
+
+## RF21 -  Visualizar todos os projetos
+
+Descrição: A visualização de todos os projetos permite que o aluno possa visualizar todas os projetos que ele cadastrou no sistema
+
+Ator: aluno
+
+## RF22 -  Visualizar projeto em específico
+
+Descrição: A visualização de um projeto em específico, permite que o aluno possa visualizar um projeto em específico, passando o ID do projeto.
+
+Ator: aluno
+## RF23 -  Excluir projeto
+
+Descrição: A exclusão de um projeto permite ao aluno excluir um projeto que ele cadastrou no sistema
+
+Ator: aluno
+
+
+## RF24 - Incluir curso
+
+Descrição: A inclusão de um novo curso solicita ao aluno os atributos: Nome do curso e Instituição
+
+Ator: aluno
+
+## RF25 -  Alterar curso
+
+Descrição: A alteração de um curso permite que o aluno possa alterar um ou mais campos dos cursos que ele cadastradou no sistema
+
+Ator: aluno
+
+## RF26 -  Visualizar todos os cursos
+
+Descrição: A visualização de todos os cursos permite que o aluno possa visualizar todas os cursos que ele cadastrou no sistema
+
+Ator: aluno
+
+## RF27 -  Visualizar curso em específico
+
+Descrição: A visualização de um curso em específico, permite que o aluno possa visualizar um curso em específico, passando o ID do curso.
+
+Ator: aluno
+## RF28 -  Excluir curso
+
+Descrição: A exclusão de um curso permite ao aluno excluir um curso que ele cadastrou no sistema
+
+Ator: aluno
+
+
+## RF29 - Incluir lembrete
+
+Descrição: A inclusão de um novo lembrete solicita ao aluno os atributos: Nome do lembrete, Descrição, Data do lembrete
+
+Ator: aluno
+
+## RF30 -  Alterar lembrete
+
+Descrição: A alteração de um lembrete permite que o aluno possa alterar um ou mais campos dos lembretes que ele cadastradou no sistema
+
+Ator: aluno
+
+## RF31 -  Visualizar todos os lembretes
+
+Descrição: A visualização de todos os lembretes permite que o aluno possa visualizar todas os lembretes que ele cadastrou no sistema
+
+Ator: aluno
+
+## RF32 -  Visualizar lembrete em específico
+
+Descrição: A visualização de um lembrete em específico, permite que o aluno possa visualizar um lembrete em específico, passando o ID do curso.
+
+Ator: aluno
+## RF34 -  Excluir lembrete
+
+Descrição: A exclusão de um lembrete permite ao aluno excluir um lembrete que ele cadastrou no sistema
+
+Ator: aluno
+
+
+## RF35 - Incluir quadro no kanban?
 
 # Requisitos não-Funcionais
 
