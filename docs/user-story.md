@@ -74,7 +74,7 @@
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
-| **TA01.01** | Veriificar se a GUI, os menus e a navegabilidade do app está satisfatória por meio de uma pesquisa informal das opiniões dos usuários |
+| **TA01.01** | Verificar se a GUI, os menus e a navegabilidade do app está satisfatória por meio de uma pesquisa informal das opiniões dos usuários |
 
 ## User story US03 - Manter projetos
 
@@ -110,3 +110,27 @@
 | **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
 | **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
 | **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
+
+## User story US04 - Manter cursos
+
+|||
+| --- | :--- |
+**Descrição** | O usuário pode cadastrar um curso e gerenciar um ou mais cursos que ele adicionar, podendo também listar todos os cursos, listar um curso em específico, editar e excluir curso.   
+**Requisitos envolvidos** | RF24, RF25, RF26, RF27, RF28   
+**Prioridade** | Essencial 
+**Estimativa** | 8h | 
+**Tempo gasto(real**) | - 
+**Analista** | -
+**Desenvolvedor** | -
+**Revisor** | -  
+
+
+### Testes de aceitação
+|||
+| --- | :--- |
+Código | Descrição
+TA01.01 | Verificar se a funcionalidade de incluir curso está incluindo novos cursos.
+TA01.02 | Verificar se a funcionalidade de alterar curso está alterando os cursos já cadastrados.
+TA01.03 | Verificar se a funcionalidade de visualizar todos os cursos está exibindo todos os cursos cadastrados pelo aluno.
+TA01.04 | Verificar se a funcionalidade de visualizar um curso específico está exibindo apenas o curso que o aluno solicitou.
+TA01.05 | Verificar se a funcionalidade de excluir curso está excluindo o curso que o aluno selecionou.
