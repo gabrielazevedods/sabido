@@ -13,7 +13,7 @@
 | 02/05/2022 | 0.0.1   | Documento inicial | Gabriel, Ednalda |
 
 
-## User story US01 - Criar tarefa
+## User story US01 - Manter tarefa
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -76,4 +76,37 @@
 | **Código**      | **Descrição** |
 | **TA01.01** | Veriificar se a GUI, os menus e a navegabilidade do app está satisfatória por meio de uma pesquisa informal das opiniões dos usuários |
 
+## User story US03 - Manter projetos
 
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O usuário poderá criar, listar, atualizar e deletar projetos, além associar tarefas a eles  |
+
+**Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF19          | Incluir projeto |
+| RF20          | Alterar projeto  |
+| RF21          | Visualizar todos os projetos      |
+| RF22          | Visualizar projeto em específico |
+| RF23          | Excluir projeto  |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |   Não desenvolvido ainda            | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              |                  -                  | 
+| **Desenvolvedor**         |                  -                  | 
+| **Revisor**               |                  -                  | 
+| **Testador**              |                  -                  | 
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA01.01** | Testar a eficácia e eficiência da funcionalidade de inserção dos dados por meio do uso da GUI do app |
+| **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
+| **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
+| **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
