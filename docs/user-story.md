@@ -134,3 +134,28 @@ TA01.02 | Verificar se a funcionalidade de alterar curso está alterando os curs
 TA01.03 | Verificar se a funcionalidade de visualizar todos os cursos está exibindo todos os cursos cadastrados pelo aluno.
 TA01.04 | Verificar se a funcionalidade de visualizar um curso específico está exibindo apenas o curso que o aluno solicitou.
 TA01.05 | Verificar se a funcionalidade de excluir curso está excluindo o curso que o aluno selecionou.
+
+## User story US05 - Manter disciplinas
+
+|||
+| --- | :--- |
+**Descrição** | O usuário pode cadastrar uma disciplina que está cursando ou já foi cursada e armazenar informações sobre as notas que obteve em cada unidade, podendo também listar todas as disciplinas, listar uma disciplina específica, editar e excluir uma disciplina existente.   
+**Requisitos envolvidos** | RF07, RF08, RF09, RF10, RF11   
+**Prioridade** | Essencial 
+**Estimativa** | 8h | 
+**Tempo gasto(real**) | - 
+**Analista** | Douglas
+**Desenvolvedor** | -
+**Revisor** | Gabriel Azevedo  
+
+
+### Testes de aceitação
+|||
+| --- | :--- |
+Código | Descrição
+TA01.01 | Verificar, através da GUI do app, se a funcionalidade de incluir disciplina está incluindo novas disciplinas.
+TA01.02 | Verificar, através da GUI do app, se a funcionalidade de alterar disciplina está alterando as disciplinas já cadastradas.
+TA01.03 | Verificar, através da GUI do app, se a funcionalidade de visualizar todas as disciplinas está exibindo todas as disciplinas cadastradas pelo aluno.
+TA01.04 | Verificar, através da GUI do app, se a funcionalidade de visualizar uma disciplina específica está exibindo apenas a disciplina que o aluno solicitou.
+TA01.05 | Verificar, através da GUI do app, se a funcionalidade de excluir disciplina está excluindo a disciplina que o aluno selecionou.
+
