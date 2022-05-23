@@ -159,3 +159,38 @@ TA01.03 | Verificar, através da GUI do app, se a funcionalidade de visualizar t
 TA01.04 | Verificar, através da GUI do app, se a funcionalidade de visualizar uma disciplina específica está exibindo apenas a disciplina que o aluno solicitou.
 TA01.05 | Verificar, através da GUI do app, se a funcionalidade de excluir disciplina está excluindo a disciplina que o aluno selecionou.
 
+
+## User story US06 - Manter Kanban
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O usuário poderá incluir, alterar, excluir e mover tarefas entre as telas do kanban, ao qual terá a fazer(To Do), fazendo(Doing) e feito(Do). |
+
+**Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF14          | Incluir Kanban |
+| RF15          | Alterar Kanban  |
+| RF16          | Visualizar Meus Kanban       |
+| RF17          | Visualizar Kanban específico |
+| RF18          | Excluir Kanban  |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              |                                     | 
+| **Desenvolvedor**         |                                     | 
+| **Revisor**               |                                     | 
+| **Testador**              |                                     | 
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA01.01** | Testar a eficácia e eficiência da funcionalidade de inserção dos dados por meio do uso da GUI do app |
+| **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
+| **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
+| **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
