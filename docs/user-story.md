@@ -194,3 +194,39 @@ TA01.05 | Verificar, através da GUI do app, se a funcionalidade de excluir disc
 | **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
 | **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
 | **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
+
+## User story US07 - Manter Alunos
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O usuário poderá criar, alterar, visualizar, listar e excluir alunos.|
+
+**Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF01          | Incluir Aluno |
+| RF02          | Alterar Aluno  |
+| RF03          | Visualizar Meus dados pessoais |
+| RF04          | Listar todos os alunos |
+| RF05          | Visualizar Aluno específico  |
+|RF06           | Excluir Aluno |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              |                                     | 
+| **Desenvolvedor**         |                                     | 
+| **Revisor**               |                                     | 
+| **Testador**              |                                     | 
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA01.01** | Testar a eficácia e eficiência da funcionalidade de inserção dos dados por meio do uso da GUI do app |
+| **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
+| **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
+| **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
