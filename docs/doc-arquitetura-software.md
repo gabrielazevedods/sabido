@@ -19,5 +19,5 @@ _
 
 <p> Um aplicativo monolítico descreve uma aplicação de software que é projetado sem modularidade. A modularidade é desejável, em geral, uma vez que suporta a reutilização de partes da lógica da aplicação e também facilita a manutenção, permitindo o reparo ou substituição de peças da aplicação sem a necessidade de substituição por atacado.
   
-  
+ ## Modelo da Arquitetura Monolítica 
 <img src="https://github.com/edinaldaufrn/engenharia-de-software-II/blob/main/images/arquitetura-monolitica.png?raw=true" width="250" height="365">
