@@ -230,3 +230,40 @@ TA01.05 | Verificar, através da GUI do app, se a funcionalidade de excluir disc
 | **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
 | **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
 | **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
+
+## User story US07 - Manter Lembrete
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O usuário poderá criar lembretes em tarefas e projetos para melhor administração dos próprios projetos.|
+
+**Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF01          | Incluir Lembrete |
+| RF02          | Alterar Lembrete  |
+| RF03          | Visualizar Lembrete |
+| RF04          | Listar todos os Lembretes |
+| RF05          | Visualizar Lembrete específico  |
+|RF06           | Excluir Lembrete |
+
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              |                                     | 
+| **Desenvolvedor**         | Lucas Santos                        | 
+| **Revisor**               |                                     | 
+| **Testador**              |                                     | 
+
+
+| Testes de Aceitação (TA) |  |
+| ----------- | --------- |
+| **Código**      | **Descrição** |
+| **TA01.01** | Testar a eficácia e eficiência da funcionalidade de inserção dos dados por meio do uso da GUI do app |
+| **TA01.02** | Testar a eficácia e eficiência da funcionalidade de exibição dos dados por meio do uso da GUI do app |
+| **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
+| **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
+
