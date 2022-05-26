@@ -1,0 +1,26 @@
+{% extends "alunos/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.nome|as_crispy_field}}
+    {{form.username|as_crispy_field}}
+    <div class="row">
+        <div class="col-md-4">
+            {{form.dataNasc|as_crispy_field}}
+        </div>
+        <div class="col-md-8">
+            {{form.email|as_crispy_field}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-success btn-block btn-lg"> <i class="fas fa-database"></i> Salvar </button>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'alunos_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar</a>
+        </div>
+    </div> 
+</form>
+{% endblock content %}

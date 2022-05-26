@@ -2,8 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.aluno_form, name = 'aluno_insert'),
-    path('<int:id>/', views.aluno_form, name = 'aluno_update'),
-    path('list/', views.aluno_list, name = 'aluno_list'),
-    path('delete/<int:id>/', views.aluno_delete, name = "aluno_delete")
+    path('', views.alunos_form, name = 'alunos_insert'),
+    path('<int:id>/', views.alunos_form, name = 'alunos_update'),
+    path('list/', views.alunos_list, name = 'alunos_list'),
+    path('delete/<int:id>/', views.alunos_delete, name = "alunos_delete")
 ]

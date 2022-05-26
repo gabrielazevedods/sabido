@@ -1,10 +1,10 @@
 from django import forms
 from .models import Aluno
 
-class DisciplinaForm(forms.ModelForm):
+class AlunoForm(forms.ModelForm):
     class Meta:
         model = Aluno
-        fields = {'nome', 'professor', 'carga_horaria', 'codigo_disciplina'}
+        fields = {'nome', 'username', 'dataNasc', 'email'}
         labels = {
             'nome':'Nome do aluno',
             'username':'Nome de Usuário',
