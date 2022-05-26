@@ -1,0 +1,37 @@
+{% extends "disciplina/base.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Nome da disciplina</td>
+            <td>Professor da disciplina</td>
+            <td>Carga horária da disciplina</td>
+            <td>Código da disciplina</td>
+            <td><a href="{% url 'disciplina_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Disciplina</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for disciplina in disciplina_list %}
+        <tr>
+            <td>{{disciplina.nome}}</td>
+            <td>{{disciplina.professor}}</td>
+            <td>{{disciplina.carga_horaria}}</td>
+            <td>{{disciplina.codigo_disciplina}}</td>
+            <td>
+                <a href="{% url 'disciplina_update' disciplina.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'disciplina_delete' disciplina.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
+
