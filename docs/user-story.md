@@ -122,7 +122,7 @@
 **Tempo gasto(real**) | - 
 **Analista** | -
 **Desenvolvedor** | -
-**Revisor** | -  
+**Revisor** | -
 
 
 ### Testes de aceitação
@@ -143,10 +143,10 @@ TA01.05 | Verificar se a funcionalidade de excluir curso está excluindo o curso
 **Requisitos envolvidos** | RF07, RF08, RF09, RF10, RF11   
 **Prioridade** | Essencial 
 **Estimativa** | 8h | 
-**Tempo gasto(real**) | - 
-**Analista** | Douglas
-**Desenvolvedor** | -
-**Revisor** | Gabriel Azevedo  
+**Tempo gasto(real**) | 2h 
+**Analista** | Gabriel Gonçalo
+**Desenvolvedor** | Gabriel Azevedo
+**Revisor** | Douglas Mateus
 
 
 ### Testes de aceitação
