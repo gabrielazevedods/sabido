@@ -24,7 +24,7 @@ def alunos_form(request, id = 0):
             form = AlunoForm(request.POST, instance = alunos)
         if form.is_valid(): 
             form.save()
-        return redirect('/aluno/list')            
+        return redirect('/alunos/list')            
 
 def alunos_delete(request, id):
     alunos = Aluno.objects.get(pk = id)

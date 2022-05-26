@@ -1,4 +1,4 @@
-{% extends "alunos/base.html" %}
+{% extends "aluno/base.html" %}
 
 {% block content %}
 <table class="table table-borderless">
@@ -8,7 +8,7 @@
             <td>Username</td>
             <td>Data de Nascimento</td>
             <td>Email</td>
-            <td><a href="{% url 'aluno_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Disciplina</a></td>
+            <td><a href="{% url 'alunos_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Disciplina</a></td>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +18,7 @@
             <td>{{aluno.username}}</td>
             <td>{{aluno.dataNasc}}</td>
             <td>{{aluno.email}}</td>
-                <a href="{% url 'aluno_update' aluno.id %}" class="btn text-secondary px-0">
+                <a href="{% url 'alunos_update' aluno.id %}" class="btn text-secondary px-0">
                     <i class="far fa-edit fa-lg"></i>
                 </a>
                 <form action="{% url 'alunos_delete' aluno.id %}" method="post" class="d-inline">
