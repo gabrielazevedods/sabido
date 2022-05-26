@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'compromisso',
     'landing_page',
-    'disciplinas'
+    'disciplinas',
+    'alunos'
 
 ]
 
