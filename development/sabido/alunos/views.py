@@ -6,7 +6,7 @@ from .models import Aluno
 
 def alunos_list(request):
     context = {'alunos_list':Aluno.objects.all()}
-    return render(request, "alunos/alunos_list.html", context)
+    return render(request, "aluno/alunos_list.html", context)
 
 def alunos_form(request, id = 0):
     if request.method == "GET":
@@ -15,7 +15,7 @@ def alunos_form(request, id = 0):
         else: # Se o id passado for diferente de 0, exibirá um formulário preenchido com os dados do Compromisso correspondentes à chave primária referente ao id
             alunos = Aluno.objects.get(pk = id)
             form = AlunoForm(instance = alunos)
-        return render(request, "alunos/alunos_form.html", {'form': form})
+        return render(request, "aluno/alunos_form.html", {'form': form})
     else:
         if id == 0: # Operação de inserir um novo Compromisso
             form = AlunoForm(request.POST)
@@ -24,7 +24,7 @@ def alunos_form(request, id = 0):
             form = AlunoForm(request.POST, instance = alunos)
         if form.is_valid(): 
             form.save()
-        return redirect('/alunos/list')            
+        return redirect('/aluno/list')            
 
 def alunos_delete(request, id):
     alunos = Aluno.objects.get(pk = id)
