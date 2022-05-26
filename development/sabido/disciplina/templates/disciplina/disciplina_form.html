@@ -1,4 +1,4 @@
-{% extends "disciplinas/base.html" %}
+{% extends "disciplina/base.html" %}
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -19,7 +19,7 @@
             <button type="submit" class="btn btn-success btn-block btn-lg"> <i class="fas fa-database"></i> Salvar </button>
         </div>
         <div class="col-md-4">
-            <a href="{% url 'disciplinas_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a Lista de Disciplinas</a>
+            <a href="{% url 'disciplina_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a Lista de Disciplinas</a>
         </div>
     </div> 
 </form>

@@ -11,10 +11,10 @@ class Disciplina(models.Model):
     def __str__(self):
         return self.nome
 
-class Compromisso(models.Model):
+class Tarefa(models.Model):
     nome = models.CharField(max_length = 100)
     descricao = models.CharField(max_length = 100)
-    data_compromisso = models.DateField()
+    data_tarefa = models.DateField()
     disciplina = models.ForeignKey(Disciplina, on_delete = models.CASCADE)
 
 

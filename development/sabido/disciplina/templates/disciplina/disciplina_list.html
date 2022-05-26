@@ -1,4 +1,4 @@
-{% extends "disciplinas/base.html" %}
+{% extends "disciplina/base.html" %}
 
 {% block content %}
 <table class="table table-borderless">
@@ -8,21 +8,21 @@
             <td>Professor da disciplina</td>
             <td>Carga horária da disciplina</td>
             <td>Código da disciplina</td>
-            <td><a href="{% url 'disciplinas_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Disciplina</a></td>
+            <td><a href="{% url 'disciplina_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Disciplina</a></td>
         </tr>
     </thead>
     <tbody>
-        {% for disciplinas in disciplinas_list %}
+        {% for disciplina in disciplina_list %}
         <tr>
-            <td>{{disciplinas.nome}}</td>
-            <td>{{disciplinas.professor}}</td>
-            <td>{{disciplinas.carga_horaria}}</td>
-            <td>{{disciplinas.codigo_disciplina}}</td>
+            <td>{{disciplina.nome}}</td>
+            <td>{{disciplina.professor}}</td>
+            <td>{{disciplina.carga_horaria}}</td>
+            <td>{{disciplina.codigo_disciplina}}</td>
             <td>
-                <a href="{% url 'disciplinas_update' disciplinas.id %}" class="btn text-secondary px-0">
+                <a href="{% url 'disciplina_update' disciplina.id %}" class="btn text-secondary px-0">
                     <i class="far fa-edit fa-lg"></i>
                 </a>
-                <form action="{% url 'disciplinas_delete' disciplinas.id %}" method="post" class="d-inline">
+                <form action="{% url 'disciplina_delete' disciplina.id %}" method="post" class="d-inline">
                     {% csrf_token %}
                     <button type="submit" class="btn">
                         <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>

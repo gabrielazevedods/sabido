@@ -23,13 +23,13 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Compromisso',
+            name='Tarefa',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nome', models.CharField(max_length=100)),
                 ('descricao', models.CharField(max_length=100)),
-                ('data_compromisso', models.DateField()),
-                ('disciplina', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='compromisso.disciplina')),
+                ('data_tarefa', models.DateField()),
+                ('disciplina', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tarefa.disciplina')),
             ],
         ),
     ]
