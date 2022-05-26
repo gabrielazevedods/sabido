@@ -8,5 +8,5 @@ class Aluno(models.Model):
     dataNasc = models.DateField(null=True)
     email = models.CharField(max_length=256)
 
-def __str__(self):
+    def __str__(self):
         return self.nome
