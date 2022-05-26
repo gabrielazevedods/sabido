@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'compromisso',
-    'landing_page'
+    'landing_page',
+    'disciplinas'
 
 ]
 
