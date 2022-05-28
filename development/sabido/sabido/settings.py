@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'landing_page',
     'disciplina',
     'alunos',
-    'jquery'
+    'jquery',
     'lembrete'
 ]
 
