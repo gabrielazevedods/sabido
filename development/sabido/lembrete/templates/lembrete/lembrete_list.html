@@ -1,0 +1,37 @@
+{% extends "lembrete/base.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Título do lembrete</td>
+            <td>Descrição</td>
+            <td>Imagem</td>
+            <td>Arquivo</td>
+            <td><a href="{% url 'lembrete_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Lembrete</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for lembrete in lembrete_list %}
+        <tr>
+            <td>{{lembrete.titulo}}</td>
+            <td>{{lembrete.descricao}}</td>
+            <td><img alt="Imagem enviada" src="/media/{{lembrete.imagem}}" width="250px"></td>
+            <td>{{lembrete.arquivo}}</td>
+            <td>
+                <a href="{% url 'lembrete_update' lembrete.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'lembrete_delete' lembrete.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
+

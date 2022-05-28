@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'tarefa',
     'landing_page',
     'disciplina',
-    'alunos'
+    'alunos',
+    'lembrete'
 
 ]
 
