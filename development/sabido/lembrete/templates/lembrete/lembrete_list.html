@@ -16,7 +16,7 @@
         <tr>
             <td>{{lembrete.titulo}}</td>
             <td>{{lembrete.descricao}}</td>
-            <td><img alt="Imagem enviada" src="/media/{{lembrete.imagem}}" width="250px"></td>
+            <td><img alt="Imagem enviada" src="{{lembrete.imagem}}" width="250px"></td>
             <td>{{lembrete.arquivo}}</td>
             <td>
                 <a href="{% url 'lembrete_update' lembrete.id %}" class="btn text-secondary px-0">
