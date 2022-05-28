@@ -2,13 +2,17 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+
 <form action="" method="post" autocomplete="off">
+
     {% csrf_token %}
+
     {{form.nome|as_crispy_field}}
     {{form.descricao|as_crispy_field}}
+
     <div class="row">
         <div class="col-md-4">
-            {{form.data_tarefa|as_crispy_field}}
+            {{form.data_tarefa|as_crispy_field}} 
         </div>
         <div class="col-md-8">
             {{form.disciplina|as_crispy_field}}
@@ -23,5 +27,6 @@
         </div>
     </div> 
 </form>
+
 {% endblock content %}
 
