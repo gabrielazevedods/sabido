@@ -12,9 +12,10 @@ class TarefaForm(forms.ModelForm):
             'data_tarefa':'Data da tarefa',
             'disciplina':'Disciplina'
         }
-
+        
     def __init__(self, *args, **kwargs):
         super(TarefaForm, self).__init__(*args, **kwargs)
         self.fields['disciplina'].empty_label = "Selecione uma disciplina"
         self.fields['descricao'].required = False
+            
 

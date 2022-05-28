@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'tarefa',
     'landing_page',
     'disciplina',
-    'alunos'
-
+    'alunos',
+    'jquery'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
