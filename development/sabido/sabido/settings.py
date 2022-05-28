@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'disciplina',
     'alunos',
     'jquery'
+    'lembrete'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"

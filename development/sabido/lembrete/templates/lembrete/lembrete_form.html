@@ -1,0 +1,27 @@
+{% extends "lembrete/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.titulo|as_crispy_field}}
+    {{form.descricao|as_crispy_field}}
+    <div class="row">
+        <div class="col-md-4">
+            {{form.imagem|as_crispy_field}}
+        </div>
+        <div class="col-md-8">
+            {{form.arquivo|as_crispy_field}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-success btn-block btn-lg"> <i class="fas fa-database"></i> Salvar </button>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'lembrete_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a Lista de Lembretes</a>
+        </div>
+    </div> 
+</form>
+{% endblock content %}
+
