@@ -4,11 +4,11 @@ from .models import Cursos
 
 # Create your views here.
 
-def Cursos_list(request):
+def cursos_list(request):
     context = {'cursos_list':Cursos.objects.all()}
     return render(request, "cursos/cursos_list.html", context)
 
-def Cursos_form(request, id = 0):
+def cursos_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
             form = CursosForm()
@@ -26,7 +26,7 @@ def Cursos_form(request, id = 0):
             form.save()
         return redirect('/cursos/list')            
 
-def Cursos_delete(request, id):
+def cursos_delete(request, id):
     cursos = Cursos.objects.get(pk = id)
     cursos.delete()
     return redirect('/cursos/list')
