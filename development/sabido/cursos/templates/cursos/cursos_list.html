@@ -1,0 +1,33 @@
+{% extends "cursos/base.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Nome do curso</td>
+            <td>Instituicao do curso</td>
+            <td><a href="{% url 'cursos_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Curso</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cursos in cursos_list %}
+        <tr>
+            <td>{{cursos.nome}}</td>
+            <td>{{cursos.instituicao}}</td>
+            
+            <td>
+                <a href="{% url 'cursos_update' cursos.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'cursos_delete' cursos.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
