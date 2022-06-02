@@ -1,12 +1,13 @@
 from django import forms
-from .models import Cursos
+from .models import Curso
 
-class CursosForm(forms.ModelForm):
+class CursoForm(forms.ModelForm):
     class Meta:
-        model = Cursos
+        model = Curso
         # fields = '__all__'
         fields = {'nome', 'instituicao'}
         labels = {
             'nome':'Nome do curso',
-            'instituicao':'Instituicao do curso'
+            'instituicao':'Instituição de ensino'
         }
+
