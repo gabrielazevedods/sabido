@@ -1,20 +1,25 @@
-{% extends "curso/base.html" %}
+{% extends "../landing_page/main.html" %}
+
 {% load crispy_forms_tags %}
 
 {% block content %}
+
 <form action="" method="post" autocomplete="off">
+
     {% csrf_token %}
+
     {{form.nome|as_crispy_field}}
     {{form.instituicao|as_crispy_field}}
-    </div>
+
     <div class="row">
         <div class="col-md-8">
             <button type="submit" class="btn btn-success btn-block btn-lg"> <i class="fas fa-database"></i> Salvar </button>
         </div>
         <div class="col-md-4">
-            <a href="{% url 'curso_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a Lista de Cursos</a>
+            <a href="{% url 'curso_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a lista de Cursos</a>
         </div>
     </div> 
 </form>
+
 {% endblock content %}
 
