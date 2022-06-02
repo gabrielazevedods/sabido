@@ -40,4 +40,4 @@ A equipe decidiu utilizar o framework Django, pois os membros gostaram da experi
 
 O Django é um framework que busca fornecer ao programador um rápido desenvolvimento de aplicativos web, porém robusto. Isso é possível pois o mesmo simplifica a dor de cabeça inicial do programador que é causada em configurar o ambiente de desenvolvimento web, uma vez que ele conta com uma grande gama de funcionalidades integradas, fundamentadas na arquitetura MVC (Model-View-Controller) que está implementada no framework como uma nova forma conhecida como MVT (Model-View-Template), que buscam principalmente o enlace entre o servidor web (Que irá controlar as requisições e respostas solicitadas pelo browser), os dados mantidos pelo banco de dados e a interface com o usuário.
 
-![alt Appointment Book](https://modelodeagenda.com/wp-content/uploads/2021/04/ANUNCIO03.jpg)
+
