@@ -4,10 +4,11 @@ from .models import Aluno
 class AlunoForm(forms.ModelForm):
     class Meta:
         model = Aluno
-        fields = {'nome', 'dataNasc', 'email'}
+        fields = {'nome', 'dataNasc', 'email', 'senha'}
         labels = {
             'nome':'Nome do aluno',
             'dataNasc':'Data de Nascimento',
-            'email':'Email'
+            'email':'Email',
+            'senha' : 'Senha'
         }
 
