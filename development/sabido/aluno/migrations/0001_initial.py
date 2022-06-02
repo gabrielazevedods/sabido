@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('username', models.CharField(max_length=16)),
                 ('dataNasc', models.DateField(null=True)),
                 ('email', models.CharField(max_length=256)),
+                ('senha', models.CharField(max_length=256)),
             ],
         ),
     ]
