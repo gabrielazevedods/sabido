@@ -23,8 +23,8 @@ urlpatterns = [
     path('tarefa/', include('tarefa.urls')),
     path('', include('landing_page.urls')),
     path('disciplina/', include('disciplina.urls')),
-    path('alunos/', include('alunos.urls')),
+    path('aluno/', include('aluno.urls')),
     path('lembrete/', include('lembrete.urls')),
-    path('cursos/', include('cursos.urls')),
+    path('curso/', include('curso.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

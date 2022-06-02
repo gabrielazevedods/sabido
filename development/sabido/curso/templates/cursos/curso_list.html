@@ -1,4 +1,4 @@
-{% extends "cursos/base.html" %}
+{% extends "curso/base.html" %}
 
 {% block content %}
 <table class="table table-borderless">
@@ -6,20 +6,20 @@
         <tr>
             <td>Nome do curso</td>
             <td>Instituicao do curso</td>
-            <td><a href="{% url 'cursos_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Curso</a></td>
+            <td><a href="{% url 'curso_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Curso</a></td>
         </tr>
     </thead>
     <tbody>
-        {% for cursos in cursos_list %}
+        {% for curso in curso_list %}
         <tr>
-            <td>{{cursos.nome}}</td>
-            <td>{{cursos.instituicao}}</td>
+            <td>{{curso.nome}}</td>
+            <td>{{curso.instituicao}}</td>
             
             <td>
-                <a href="{% url 'cursos_update' cursos.id %}" class="btn text-secondary px-0">
+                <a href="{% url 'curso_update' curso.id %}" class="btn text-secondary px-0">
                     <i class="far fa-edit fa-lg"></i>
                 </a>
-                <form action="{% url 'cursos_delete' cursos.id %}" method="post" class="d-inline">
+                <form action="{% url 'curso_delete' curso.id %}" method="post" class="d-inline">
                     {% csrf_token %}
                     <button type="submit" class="btn">
                         <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
@@ -31,3 +31,4 @@
     </tbody>
 </table>
 {% endblock content %}
+
