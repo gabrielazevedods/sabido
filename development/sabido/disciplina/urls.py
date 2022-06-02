@@ -6,6 +6,6 @@ urlpatterns = [
     path('<int:id>/', views.disciplina_form, name = 'disciplina_update'),
     path('list/', views.disciplina_list, name = 'disciplina_list'),
     path('delete/<int:id>/', views.disciplina_delete, name = "disciplina_delete")
-]
+] 
 
 

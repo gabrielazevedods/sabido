@@ -1,4 +1,4 @@
-{% extends "tarefa/base.html" %}
+{% extends "../landing_page/main.html" %} 
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -23,7 +23,7 @@
             <button type="submit" class="btn btn-success btn-block btn-lg"> <i class="fas fa-database"></i> Salvar </button>
         </div>
         <div class="col-md-4">
-            <a href="{% url 'tarefa_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a Lista de Tarefas</a>
+            <a href="{% url 'tarefa_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a lista de Tarefas</a>
         </div>
     </div> 
 </form>

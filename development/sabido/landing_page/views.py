@@ -5,3 +5,6 @@ from django.shortcuts import render, redirect
 def landing_page(request):
     return render(request, "landing_page/index.html")
 
+def main(request):
+    return render(request, "landing_page/main.html")
+
