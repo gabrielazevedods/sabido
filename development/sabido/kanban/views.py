@@ -36,7 +36,7 @@ def kanban_doing_form(request, id = 0):
             form = KanbanDoingForm()
         else: # Se o id passado for diferente de 0, exibirá um formulário preenchido com os dados do Kanban correspondentes à chave primária referente ao id
             kanbandoing = KanbanDoing.objects.get(pk = id)
-            form = KanbanDoing(instance = kanbandoing)
+            form = KanbanDoingForm(instance = kanbandoing)
         return render(request, "kanban/kanban_doing_form.html", {'form': form})
     else:
         if id == 0: # Operação de inserir uma tarefa em uma divisão do Kanban
