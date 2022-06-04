@@ -5,7 +5,6 @@
     <thead>
         <tr>
             <td>Nome do Aluno</td>
-            <td>Username</td>
             <td>Data de Nascimento</td>
             <td>Email</td>
             <td><a href="{% url 'aluno_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Aluno</a></td>
@@ -15,7 +14,6 @@
         {% for aluno in aluno_list %}
         <tr>
             <td>{{aluno.nome}}</td>
-            <td>{{aluno.username}}</td>
             <td>{{aluno.dataNasc}}</td>
             <td>{{aluno.email}}</td>
             <td>
@@ -34,4 +32,5 @@
     </tbody>
 </table>
 {% endblock content %}
+
 
