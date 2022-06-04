@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'aluno',
     'jquery',
     'lembrete',
-    'curso'
+    'curso',
+    'kanban'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -150,3 +151,4 @@ STATIC_ROOT = "/var/www/sabido.com.br/static/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LANGUAGE_CODE = 'pt-BR'
+

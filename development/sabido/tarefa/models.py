@@ -9,4 +9,6 @@ class Tarefa(models.Model):
     data_tarefa = models.DateField()
     disciplina = models.ForeignKey(Disciplina, on_delete = models.CASCADE)
 
+    def __str__(self):
+        return self.nome
 
