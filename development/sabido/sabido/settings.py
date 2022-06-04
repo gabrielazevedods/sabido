@@ -150,3 +150,6 @@ STATIC_ROOT = "/var/www/sabido.com.br/static/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#CAMINHO PARA SALVAR AS MÍDIAS
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
