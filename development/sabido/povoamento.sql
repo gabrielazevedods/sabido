@@ -10,4 +10,3 @@ INSERT INTO public.tarefa_disciplina(
 	id, nome, professor, carga_horaria, codigo_disciplina)
 	VALUES (3, 'Gestão da Inovação', 'Gilson Gomes', 60, 'DCT1204');
 
-    

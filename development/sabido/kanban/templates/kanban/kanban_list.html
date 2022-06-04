@@ -1,0 +1,106 @@
+{% extends "../landing_page/main.html" %} 
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-md-4">
+
+<h1> To Do </h1>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Nome da tarefa</td>
+            <td><a href="{% url 'kanban_todo_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Tarefa ao Quadro Kanban To Do</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for kanbantodo in kanban_todo_list %}
+        <tr>
+            <td>{{kanbantodo.tarefa}}</td>
+            <td>
+                <a href="{% url 'kanban_todo_update' kanbantodo.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'kanban_todo_delete' kanbantodo.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+<div class="col-md-4">
+
+<h1> Doing </h1>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Nome da tarefa</td>
+            <td><a href="{% url 'kanban_doing_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Tarefa ao Quadro Kanban Doing</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for kanbandoing in kanban_doing_list %}
+        <tr>
+            <td>{{kanbandoing.tarefa}}</td>
+            <td>
+                <a href="{% url 'kanban_doing_update' kanbandoing.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'kanban_doing_delete' kanbandoing.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+<div class="col-md-4">
+
+<h1> Done </h1>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Nome da tarefa</td>
+            <td><a href="{% url 'kanban_done_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Nova Tarefa ao Quadro Kanban Done</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for kanbandone in kanban_done_list %}
+        <tr>
+            <td>{{kanbandone.tarefa}}</td>
+            <td>
+                <a href="{% url 'kanban_done_update' kanbandone.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'kanban_done_delete' kanbandone.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+</div>
+
+{% endblock content %}
+
