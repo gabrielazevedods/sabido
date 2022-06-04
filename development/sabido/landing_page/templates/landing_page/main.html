@@ -147,6 +147,28 @@
             </li> 
 
             <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKanban"
+                    aria-expanded="true" aria-controls="collapseKanban">
+                    <i class="fas fa-chalkboard"></i>
+                    <span>Kanban</span>
+                </a>
+                <div id="collapseKanban" class="collapse" aria-labelledby="headingKanban"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Menu Kanban</h6>
+                        <a class="collapse-item" href="{% url 'kanban_list' %}">Quadro Kanban</a>
+                        <a class="collapse-item" href="{% url 'kanban_todo_insert' %}">Inserir no To Do</a>
+                        <a class="collapse-item" href="{% url 'kanban_doing_insert' %}">Inserir no Doing</a>
+                        <a class="collapse-item" href="{% url 'kanban_done_insert' %}">Inserir no Done</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
         </ul>
