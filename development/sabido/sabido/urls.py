@@ -26,5 +26,6 @@ urlpatterns = [
     path('aluno/', include('aluno.urls')),
     path('lembrete/', include('lembrete.urls')),
     path('curso/', include('curso.urls')),
+    path('kanban/', include('kanban.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
