@@ -11,3 +11,8 @@ class AlunoForm(forms.ModelForm):
             'email':'Email'
         }
 
+    dataNasc = forms.DateField(
+        widget=forms.DateInput(format='%d/%m/%Y'),
+        input_formats=('%d/%m/%Y', )
+    )
+

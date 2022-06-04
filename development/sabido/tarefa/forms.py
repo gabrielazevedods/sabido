@@ -17,5 +17,8 @@ class TarefaForm(forms.ModelForm):
         super(TarefaForm, self).__init__(*args, **kwargs)
         self.fields['disciplina'].empty_label = "Selecione uma disciplina"
         self.fields['descricao'].required = False
-            
-
+                
+    data_tarefa = forms.DateField(
+            widget=forms.DateInput(format='%d/%m/%Y'),
+            input_formats=('%d/%m/%Y', )
+        )
