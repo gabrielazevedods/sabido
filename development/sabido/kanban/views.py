@@ -6,6 +6,8 @@ from .models import KanbanToDo
 from .models import KanbanDoing
 from .models import KanbanDone
 
+KANBAN_LIST = '/kanban/list'
+
 # Create your views here.
 
 def kanban_list(request):
@@ -28,7 +30,7 @@ def kanban_todo_form(request, id = 0):
             form = KanbanToDoForm(request.POST, instance = kanbantodo)
         if form.is_valid(): 
             form.save()
-        return redirect('/kanban/list')    
+        return redirect(KANBAN_LIST)    
 
 def kanban_doing_form(request, id = 0):
     if request.method == "GET":
@@ -46,7 +48,7 @@ def kanban_doing_form(request, id = 0):
             form = KanbanDoingForm(request.POST, instance = kanbandoing)
         if form.is_valid(): 
             form.save()
-        return redirect('/kanban/list')
+        return redirect(KANBAN_LIST)
 
 def kanban_done_form(request, id = 0):
     if request.method == "GET":
@@ -64,20 +66,20 @@ def kanban_done_form(request, id = 0):
             form = KanbanDoneForm(request.POST, instance = kanbandone)
         if form.is_valid(): 
             form.save()
-        return redirect('/kanban/list')        
+        return redirect(KANBAN_LIST)        
 
-def kanban_todo_delete(request, id):
+def kanban_todo_delete(id):
     kanbantodo = KanbanToDo.objects.get(pk = id)
     kanbantodo.delete()
-    return redirect('/kanban/list')
+    return redirect(KANBAN_LIST)
 
-def kanban_doing_delete(request, id):
+def kanban_doing_delete(id):
     kanbandoing = KanbanDoing.objects.get(pk = id)
     kanbandoing.delete()
-    return redirect('/kanban/list')
+    return redirect(KANBAN_LIST)
 
-def kanban_done_delete(request, id):
+def kanban_done_delete(id):
     kanbandone = KanbanDone.objects.get(pk = id)
     kanbandone.delete()
-    return redirect('/kanban/list')
+    return redirect(KANBAN_LIST)
 

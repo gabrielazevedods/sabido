@@ -1,0 +1,6 @@
+projectKey=sabido
+serverUrl=http://labens.dct.ufrn.br/sonarqube
+serverVersion=9.4.0.54424
+dashboardUrl=http://labens.dct.ufrn.br/sonarqube/dashboard?id=sabido
+ceTaskId=AYF5p1-_6XokyAk1hi21
+ceTaskUrl=http://labens.dct.ufrn.br/sonarqube/api/ce/task?id=AYF5p1-_6XokyAk1hi21
