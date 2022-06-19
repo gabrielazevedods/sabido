@@ -1,13 +1,17 @@
 from django.shortcuts import render, redirect
 from .forms import AlunoForm
 from .models import Aluno
+from django.http import HttpResponse
+from django.views.decorators.http import require_safe
 
 # Create your views here.
 
+@require_safe
 def aluno_list(request):
     context = {'aluno_list':Aluno.objects.all()}
-    return render(request, "aluno/aluno_list.html", context)
+    return HttpResponse(render(request, "aluno/aluno_list.html", context))
 
+@require_safe
 def aluno_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -15,7 +19,7 @@ def aluno_form(request, id = 0):
         else: # Se o id passado for diferente de 0, exibirá um formulário preenchido com os dados do Compromisso correspondentes à chave primária referente ao id
             aluno = Aluno.objects.get(pk = id)
             form = AlunoForm(instance = aluno)
-        return render(request, "aluno/aluno_form.html", {'form': form})
+        return HttpResponse(render(request, "aluno/aluno_form.html", {'form': form}))
     else:
         if id == 0: # Operação de inserir um novo Compromisso
             form = AlunoForm(request.POST)
@@ -26,6 +30,7 @@ def aluno_form(request, id = 0):
             form.save()
         return redirect('/aluno/list')            
 
+@require_safe
 def aluno_delete(id):
     aluno = Aluno.objects.get(pk = id)
     aluno.delete()
