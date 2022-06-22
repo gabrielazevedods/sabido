@@ -1,13 +1,16 @@
 from django.shortcuts import render, redirect
 from .forms import CursoForm
 from .models import Curso
+from django.views.decorators.http import require_safe
 
 # Create your views here.
 
+@require_safe
 def curso_list(request):
     context = {'curso_list':Curso.objects.all()}
-    return render(request, "curso/curso_list.html", context)
+    return HttpResponse(render(request, "curso/curso_list.html", context))
 
+@require_safe
 def curso_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -15,7 +18,7 @@ def curso_form(request, id = 0):
         else: # Se o id passado for diferente de 0, exibirá um formulário preenchido com os dados do Tarefa correspondentes à chave primária referente ao id
             curso = Curso.objects.get(pk = id)
             form = CursoForm(instance = curso)
-        return render(request, "curso/curso_form.html", {'form': form})
+        return HttpResponse(render(request, "curso/curso_form.html", {'form': form}))
     else:
         if id == 0: # Operação de inserir uma nova Tarefa
             form = CursoForm(request.POST)
@@ -26,8 +29,8 @@ def curso_form(request, id = 0):
             form.save()
         return redirect('/curso/list')            
 
+@require_safe
 def curso_delete(id):
     curso = Curso.objects.get(pk = id)
     curso.delete()
     return redirect('/curso/list')
-
