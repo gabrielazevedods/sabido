@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import CursoForm
 from .models import Curso
+from django.http import HttpResponse
 from django.views.decorators.http import require_safe
 
 # Create your views here.
@@ -34,3 +35,4 @@ def curso_delete(id):
     curso = Curso.objects.get(pk = id)
     curso.delete()
     return redirect('/curso/list')
+
