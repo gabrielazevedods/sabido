@@ -231,7 +231,7 @@ TA01.05 | Verificar, através da GUI do app, se a funcionalidade de excluir disc
 | **TA01.03** | Testar a eficácia e eficiência da funcionalidade de alteração dos dados por meio do uso da GUI do app |
 | **TA01.04** | Testar a eficácia e eficiência da funcionalidade de exclusão de dados por meio do uso da GUI do app |
 
-## User story US07 - Manter Lembrete
+## User story US08 - Manter Lembrete
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
