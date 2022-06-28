@@ -26,7 +26,7 @@ def lembrete_form(request, id = 0):
             form.save()
         return redirect('/lembrete/list')            
 
-def lembrete_delete(request, id):
+def lembrete_delete(id):
     lembrete = Lembrete.objects.get(pk = id)
     lembrete.delete()
     return redirect('/lembrete/list')
