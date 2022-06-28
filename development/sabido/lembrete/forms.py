@@ -4,7 +4,6 @@ from .models import Lembrete
 class LembreteForm(forms.ModelForm):
     class Meta:
         model = Lembrete
-        # fields = '__all__'
         fields = {'titulo', 'descricao', 'imagem', 'arquivo'}
         labels = {
             'titulo':'Título do lembrete',
