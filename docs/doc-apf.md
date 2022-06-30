@@ -15,25 +15,24 @@ Existem várias práticas de contagem, cada uma com suas especificidades.
 Na contagem indicativa (Ci) só é necessário conhecer e analisar as **Funções de Dados**. Desta forma, 
 os **ALI**s (Arquivos Lógicos Internos) com o valor de *35 PF* cada e os **AIE**s (Arquivos de Interface Externa) com o valor de *15 PF* cada.
 
-### Modelo de Dados 
-
-```mermaid
-erDiagram
-    Usuario }o--|{ Grupo : grupos
-    Usuario ||--|| Endereco : ""
-    Usuario }|--o{ Laboratorio : membro
-    Usuario }o--o{ Projeto : participante
-```
-
 ### Contagem Indicativa
 
-| Função de Dado  | Entidades Relacionadas | Tamanho em PF |
-| --------------- | ---------------------- | :-----------: |
-| ALI Usuário     | Usuario e Grupo        | 35 PF         |
-| ALI Projeto     | Projeto                | 35 PF         |
-| ALI Laboratorio | Laboratorio            | 35 PF         |
-| AIE Endereço    | Endereço               | 15 PF         |
-| **Total**       | **Ci**                 | **120 PF**    |
+| Função de Dado     | Entidades Relacionadas | Tamanho em PF |
+| ------------------ | ---------------------- | :-----------: |
+| ALI Tarefa         | Tarefa e Disciplina    | 35 PF         |
+| AIE Landing page   | Landing page           | 15 PF         |
+| ALI Projeto        | Laboratorio            | 35 PF         |
+| ALI Curso          | Curso                  | 15 PF         |
+| ALI Kanban         | Kanban                 | 35 PF         | 
+| ALI Aluno          | Aluno                  | 35 PF         |
+| ALI Disciplina     | Disciplina             | 35 PF         |
+| ALI Lembrete       | Lembrete               | 35 PF         |
+| ----------------------------------------------------------- |
+| **Contagem Indicativa**                     | **260**       |
+| **Fator de Ajuste Mínimo 65%**              | **169**       |
+| **Fator de Ajuste Máximo 135%**             | **351**       | 
+| ----------------------------------------------------------- |
+
 
 O documento mais detalhado pode ser acessado aqui:
 [Documento de APF - Google Docs](https://docs.google.com/document/d/18CkC5_z02sDCgFOml6o5UAZr1pFsku0Tou1jfnH7-7s/edit?usp=sharing).
