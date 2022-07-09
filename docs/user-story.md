@@ -179,12 +179,12 @@ TA01.05 | Verificar, através da GUI do app, se a funcionalidade de excluir disc
 | ------------------------- | ----------------------------------- | 
 | **Prioridade**            | Essencial                           | 
 | **Estimativa**            | 8 h                                 | 
-| **Tempo Gasto (real):**   |                                     | 
-| **Tamanho Funcional**     | 7 PF                                | 
-| **Analista**              |                                     | 
-| **Desenvolvedor**         |                                     | 
-| **Revisor**               |                                     | 
-| **Testador**              |                                     | 
+| **Tempo Gasto (real):**   | 4 h                                 | 
+| **Tamanho Funcional**     | 35 PF                               | 
+| **Analista**              | Gabriel Gonçalo                     | 
+| **Desenvolvedor**         | Douglas                             | 
+| **Revisor**               | Danrley                             | 
+| **Testador**              | Gabriel Azevedo                     | 
 
 
 | Testes de Aceitação (TA) |  |
