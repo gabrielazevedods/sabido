@@ -7,11 +7,11 @@ Histórico de revisões
 # Equipe e Definição de Papéis
 | Equipe | Papel | E-mail |  
 | --- | --- | --- |
-| Danrley | Gerente | danrleydaniel21@gmail.com
+| Danrley | Desenvolvedor | danrleydaniel21@gmail.com
 | Douglas | Desenvolvedor | douglasmateus1@hotmail.com
 | Ednalda | Desenvolvedor | edinaldacrist@hotmail.com
 | Gabriel Azevedo | Desenvolvedor | gabrielazevedo492@gmail.com
-| Gabriel Gonçalo | Desenvolvedor | gabriel.tchutcha@hotmail.com.br
+| Gabriel Gonçalo | Gerente | gabriel.tchutcha@hotmail.com.br
 | Lucas | Desenvolvedor | santoslucas9956@gmail.com
 
 # Descrição do projeto
@@ -90,143 +90,136 @@ Ator: Aluno
 
 ## RF11 - Histórico de Disciplinas
 
-Descrição: Exibe um relatório de todas as disciplinas já cursadas no passado e que estão sendo cursadas no presente pelo aluno, permite o estudante consultar o seu histórico de notas por unidade em cada disciplina e a sua situação (Aprovado / Reprovado / Aprovado por Nota.
-
+Descrição: Exibe um relatório de todas as disciplinas já cursadas no passado e que estão sendo cursadas no presente pelo aluno.
 Ator: Aluno
 
-## RF12 - Calculadora simuladora de resultado
-
-Descrição: Permite o aluno estimar a nota mínima que precisa para ser aprovado em determinada disciplina com a inserção das notas por unidades para cada disciplina cursada e a atribuição de pesos por unidades.
-
-Autor: Aluno
-
-## RF13 - Gerar Horário de Aulas 
+## RF12 - Gerar Horário de Aulas 
 
 Descrição: Baseado nas disciplinas que estão sendo cursadas no momento, agrupa-las por dia, turno e hora da aula.
 
 Autor: Aluno
 
-## RF14 - Incluir tarefa
+## RF13 - Incluir tarefa
 
 Descrição: A inclusão de um compromisso solicita os atributos Nome do compromisso, Descrição, Nome da disciplina, Data do compromisso.
 
 Ator: Aluno
 
-## RF15 - Alterar tarefa
+## RF14 - Alterar tarefa
 
 Descrição: A alteração de um aluno permite a mudança (Atualização) dos dados já armazenados referentes aos compromissos.
 Ator: Aluno
 
-## RF16 - Visualizar minhas tarefas
+## RF15 - Visualizar minhas tarefas
 
 Descrição: Permite o aluno vizualizar uma lista com todos os compromissos em que ele está submetido.
 
 Ator: Aluno
 
-## RF17 - Visualizar tarefa específicas
+## RF16 - Visualizar tarefa específicas
 
 Descrição: Visualizar as informações de um determinado compromisso.
 
 Ator: Aluno
 
-## RF18 - Excluir tarefa
+## RF17 - Excluir tarefa
 
 Descrição: Excluir um determinado compromisso manualmente ou após o seu prazo ter se expirado.
 
 Ator: Aluno
 
 
-## RF19 -  Incluir projeto
+## RF18 -  Incluir projeto
 
 Descrição: A inclusão de um novo projeto solicita ao aluno os atributos: Nome do projeto, descrição, Nome da disciplina a qual o projeto pertence e Data do projeto
 
 Ator: aluno
 
-## RF20 -  Alterar projeto
+## RF19 -  Alterar projeto
 
 Descrição: A alteração de um projeto permite que o aluno possa alterar um ou mais campos dos projetos que ele cadastradou no sistema
 
 Ator: aluno
 
-## RF21 -  Visualizar todos os projetos
+## RF20 -  Visualizar todos os projetos
 
 Descrição: A visualização de todos os projetos permite que o aluno possa visualizar todas os projetos que ele cadastrou no sistema
 
 Ator: aluno
 
-## RF22 -  Visualizar projeto em específico
+## RF21 -  Visualizar projeto em específico
 
 Descrição: A visualização de um projeto em específico, permite que o aluno possa visualizar um projeto em específico, passando o ID do projeto.
 
 Ator: aluno
-## RF23 -  Excluir projeto
+## RF22 -  Excluir projeto
 
 Descrição: A exclusão de um projeto permite ao aluno excluir um projeto que ele cadastrou no sistema
 
 Ator: aluno
 
 
-## RF24 - Incluir curso
+## RF23 - Incluir curso
 
 Descrição: A inclusão de um novo curso solicita ao aluno os atributos: Nome do curso e Instituição
 
 Ator: aluno
 
-## RF25 -  Alterar curso
+## RF24 -  Alterar curso
 
 Descrição: A alteração de um curso permite que o aluno possa alterar um ou mais campos dos cursos que ele cadastradou no sistema
 
 Ator: aluno
 
-## RF26 -  Visualizar todos os cursos
+## RF25 -  Visualizar todos os cursos
 
 Descrição: A visualização de todos os cursos permite que o aluno possa visualizar todas os cursos que ele cadastrou no sistema
 
 Ator: aluno
 
-## RF27 -  Visualizar curso em específico
+## RF26 -  Visualizar curso em específico
 
 Descrição: A visualização de um curso em específico, permite que o aluno possa visualizar um curso em específico, passando o ID do curso.
 
 Ator: aluno
-## RF28 -  Excluir curso
+## RF27 -  Excluir curso
 
 Descrição: A exclusão de um curso permite ao aluno excluir um curso que ele cadastrou no sistema
 
 Ator: aluno
 
 
-## RF29 - Incluir lembrete
+## RF28 - Incluir lembrete
 
 Descrição: A inclusão de um novo lembrete solicita ao aluno os atributos: Nome do lembrete, Descrição, Data do lembrete
 
 Ator: aluno
 
-## RF30 -  Alterar lembrete
+## RF29 -  Alterar lembrete
 
 Descrição: A alteração de um lembrete permite que o aluno possa alterar um ou mais campos dos lembretes que ele cadastradou no sistema
 
 Ator: aluno
 
-## RF31 -  Visualizar todos os lembretes
+## RF30 -  Visualizar todos os lembretes
 
 Descrição: A visualização de todos os lembretes permite que o aluno possa visualizar todas os lembretes que ele cadastrou no sistema
 
 Ator: aluno
 
-## RF32 -  Visualizar lembrete em específico
+## RF31 -  Visualizar lembrete em específico
 
 Descrição: A visualização de um lembrete em específico, permite que o aluno possa visualizar um lembrete em específico, passando o ID do curso.
 
 Ator: aluno
-## RF34 -  Excluir lembrete
+## RF32 -  Excluir lembrete
 
 Descrição: A exclusão de um lembrete permite ao aluno excluir um lembrete que ele cadastrou no sistema
 
 Ator: aluno
 
 
-## RF35 - Incluir quadro no kanban?
+## RF33 - Incluir quadro no kanban
 
 # Requisitos não-Funcionais
 
@@ -238,11 +231,7 @@ Descrição: Ao excluir um aluno, deve ser realizada uma Exclusão Lógica, de m
 
 Descrição: O aplicativo deve ser multiplataforma (Computadores, Tablets e Celulares), portanto a responsividade deve ser assegurada.
 
-## RNF03 - Notificações 
-
-Descrição: O aluno pode optar por receber lembretes por email sobre determinado compromisso, podendo escolher ser lembrado a cada dia ou apenas quando estiver faltando uma semana para o prazo final.
-
-## RNF04 - Interface intuitiva
+## RNF03 - Interface intuitiva
 
 Descrição: O aplicativo deve ter uma interface amigável, de modo que o mesmo possa ser de fácil compreensão e de fácil usabilidade até mesmo para jovens alunos do ensino fundamental.
 
