@@ -23,3 +23,18 @@ SABIDO é um assistente acadêmico pessoal desenvolvido com o objetivo de ajudar
 
 [Lucas da Silva Santos / lucassilva01](https://github.com/lucassilva01)
 
+
+# python manage.py makemigrations
+# python manage.py migrate
+# pip install -r requiriments.txt
+
+# pip install coverage
+# coverage run -m unittest discover 
+ ou 
+# coverage run manage.py test
+
+# coverage html
+
+# coverage report
+
+
