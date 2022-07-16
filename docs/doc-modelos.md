@@ -23,7 +23,7 @@ Abaixo temos uma breve descrição das entidades que compõe o sistema.
 
 O dicionário de dados consiste em um conjunto de tabelas que fornecem informações sobre outras tabelas no banco de dados. Dessa forma, o dicionário de dados configura-se como um repositório de metadados, armazenado em um banco de dados relacional, descrevendo e mapeando as estruturas de dados do sistema.
 
-## Tabela - Usuário
+## Tabela - aluno
 
 | Atributo  | Chave | Tipo de dado | Tamanho | Descrição                                     |
 | --------- | :---: | :----------: | :-----: | --------------------------------------------- |
@@ -56,9 +56,29 @@ O dicionário de dados consiste em um conjunto de tabelas que fornecem informaç
 | dataFim      |  NN   |   DATETIME   |     8     | Data e hora formato (YYYY-MM-DD HH:MM:SS.ffffff).                     |
 |tarefa_projeto|  FK   |   NUMERIC    |     4     | Chave para um projeto.                                                |
 
-## Tabela - Logs
+## Tabela - Disciplina
 
 | Atributo    | Chave | Tipo de dado | Tamanho | Descrição                                                           |
 | ----------- | :---: | :----------: | :-----: | ------------------------------------------------------------------- |
-| id          |  PK   |   NUMERIC    |    4    | Identificador incremental de Lembrete.                              |
-| tarefasRecentes    |  NN   | VARCHAR[]  |   Undefined    | Histórico de tarefas já realizadas.                     |
+| id          |  PK   |   NUMERIC    |    4    | Identificador incremental de disciplina.                            |
+| nome        |  NN   | VARCHAR[50]  |    50   | nome da disciplina.                     |
+| professor   |  NN   | VARCHAR[50]  |    50   | nome do professor da disciplina.                     |
+| carga horaria  |  NN   | NUMERIC   |    4    | carga horaria da disciplina                    |
+
+## Tabela - Lembrete
+
+| Atributo    | Chave | Tipo de dado | Tamanho | Descrição                                                           |
+| ----------- | :---: | :----------: | :-----: | ------------------------------------------------------------------- |
+| id          |  PK   |   NUMERIC    |    4    | Identificador incremental de lembrete.                            |
+| titulo      |  NN   | VARCHAR[50]  |    50   | titulo do lembrete.                     |
+| descrição   |  NN   | VARCHAR[250] |    250  | descrição de lembrete                   |
+
+## Tabela - Curso
+
+| Atributo    | Chave | Tipo de dado | Tamanho | Descrição                                                           |
+| ----------- | :---: | :----------: | :-----: | ------------------------------------------------------------------- |
+| id          |  PK   |   NUMERIC    |    4    | Identificador incremental de curso.                            |
+| nome        |  NN   | VARCHAR[50]  |    50   | nome do curso.                     |
+| instituição |  NN   | VARCHAR[50]  |    50   | nome da instituição.                     |
+
+
