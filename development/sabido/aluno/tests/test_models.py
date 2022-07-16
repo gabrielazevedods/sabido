@@ -6,8 +6,7 @@ import datetime
 class ModelsTestCase(TestCase):
     def test_validar_dados_aluno(self):
         pattern = r'[^A-Za-z]+' # Padrão de expressão regular para limitar o usuário a inserir somente caracteres alfabéticos
-        pattern2 = r'/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;' # Padrão de expressão regular para limitar o usuário a inserir somente caracteres numéricos
-        pattern3 = r'[^A-Za-z0-9]+' # Padrão de expressão regular para limitar o usuário a inserir somente caracteres alfanuméricos
+        pattern2 = r'/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;' # Padrão de expressão regular para emails
         
         aluno = Aluno.objects.create(nome = "Danrley Daniel Moreira Sales", dataNasc = datetime.datetime(2000, 9, 6), email="danrleydaniel21@gmail.com")
         aluno.save()
