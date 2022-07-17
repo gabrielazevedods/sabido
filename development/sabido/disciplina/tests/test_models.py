@@ -1,7 +1,6 @@
 from django.test import TestCase
 from disciplina.models import Disciplina
 import re
-import datetime
 
 class ModelsTestCase(TestCase):
     def test_validar_dados_disciplina(self):
@@ -18,13 +17,9 @@ class ModelsTestCase(TestCase):
         alphabetic_str = re.sub(pattern, ' ', disciplina.professor)        
         self.assertEqual(disciplina.professor, alphabetic_str)
 
-        numeric_str = re.sub(pattern2, ' ', disciplina.carga_horaria)
-        self.assertEqual(disciplina.carga_horaria, numeric_str)
+        self.assertEqual(isinstance(disciplina.carga_horaria, int), isinstance(60, int))
 
         alphanumeric_str = re.sub(pattern3, ' ', disciplina.codigo_disciplina)
         self.assertEqual(disciplina.codigo_disciplina, alphanumeric_str)
 
-#nome
-#professor
-#carga_horaria
-#codigo_disciplina
+

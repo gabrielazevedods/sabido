@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect
 from .forms import ProjetoForm
 from .models import Projeto
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe
+from django.views.decorators.http import require_safe, require_http_methods
 
 # Create your views here.
 
-# @require_safe
+@require_http_methods(["GET", "POST"])
 def projeto_list(request):
     context = {'projeto_list':Projeto.objects.all()}
     return HttpResponse(render(request, "projeto/projeto_list.html", context))
 
-# @require_safe
+@require_http_methods(["GET", "POST"])
 def projeto_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,7 +30,7 @@ def projeto_form(request, id = 0):
             form.save()
         return redirect('/projeto/list')          
 
-# @require_safe
+@require_http_methods(["GET", "POST"])
 def projeto_delete(id):
     projeto = Projeto.objects.get(pk = id)
     projeto.delete()

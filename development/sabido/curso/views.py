@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect
 from .forms import CursoForm
 from .models import Curso
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe
+from django.views.decorators.http import require_safe, require_http_methods
 
 # Create your views here.
 
-# @require_safe
+@require_http_methods(["GET", "POST"])
 def curso_list(request):
     context = {'curso_list':Curso.objects.all()}
     return HttpResponse(render(request, "curso/curso_list.html", context))
 
-# @require_safe
+@require_http_methods(["GET", "POST"])
 def curso_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,7 +30,7 @@ def curso_form(request, id = 0):
             form.save()
         return redirect('/curso/list')            
 
-# @require_safe
+@require_http_methods(["GET", "POST"])
 def curso_delete(id):
     curso = Curso.objects.get(pk = id)
     curso.delete()
