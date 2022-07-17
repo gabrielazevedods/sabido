@@ -7,7 +7,6 @@
             <td>Título do lembrete</td>
             <td>Descrição</td>
             <td>Imagem</td>
-            <td>Arquivo</td>
             <td><a href="{% url 'lembrete_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Lembrete</a></td>
         </tr>
     </thead>
@@ -17,7 +16,6 @@
             <td>{{lembrete.titulo}}</td>
             <td>{{lembrete.descricao}}</td>
             <td><img src="{{ lembrete.imagem }}" width=150% height=150%/></td>
-            <td>{{lembrete.arquivo}}</td>
             <td>
                 <a href="{% url 'lembrete_update' lembrete.id %}" class="btn text-secondary px-0">
                     <i class="far fa-edit fa-lg"></i>
@@ -34,3 +32,4 @@
     </tbody>
 </table>
 {% endblock content %}
+
