@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect
 from .forms import AlunoForm
 from .models import Aluno
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe, require_http_methods
+from django.views.decorators.http import require_safe, require_http_methods, require_GET, require_POST
 
 # Create your views here.
 
-@require_http_methods(["GET", "POST"])
+@require_safe
 def aluno_list(request):
     context = {'aluno_list':Aluno.objects.all()}
     return HttpResponse(render(request, "aluno/aluno_list.html", context))
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def aluno_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,10 +30,10 @@ def aluno_form(request, id = 0):
             form.save()
         return redirect('/aluno/list')            
 
-@require_http_methods(["GET", "POST"])
 def aluno_delete(id):
     aluno = Aluno.objects.get(pk = id)
     aluno.delete()
     return redirect('/aluno/list')
+
 
 

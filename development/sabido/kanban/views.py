@@ -6,18 +6,18 @@ from .models import KanbanToDo
 from .models import KanbanDoing
 from .models import KanbanDone
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe, require_http_methods
+from django.views.decorators.http import require_safe, require_http_methods, require_GET, require_POST
 
 KANBAN_LIST = '/kanban/list'
 
 # Create your views here.
 
-@require_http_methods(["GET", "POST"])
+@require_safe
 def kanban_list(request):
     context = {'kanban_todo_list':KanbanToDo.objects.all(), 'kanban_doing_list':KanbanDoing.objects.all(), 'kanban_done_list':KanbanDone.objects.all()}
     return HttpResponse(render(request, "kanban/kanban_list.html", context))
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def kanban_todo_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -36,7 +36,7 @@ def kanban_todo_form(request, id = 0):
             form.save()
         return redirect(KANBAN_LIST)    
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def kanban_doing_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -55,7 +55,7 @@ def kanban_doing_form(request, id = 0):
             form.save()
         return redirect(KANBAN_LIST)
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def kanban_done_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -74,19 +74,16 @@ def kanban_done_form(request, id = 0):
             form.save()
         return redirect(KANBAN_LIST)        
 
-@require_http_methods(["GET", "POST"])
 def kanban_todo_delete(id):
     kanbantodo = KanbanToDo.objects.get(pk = id)
     kanbantodo.delete()
     return redirect(KANBAN_LIST)
 
-@require_http_methods(["GET", "POST"])
 def kanban_doing_delete(id):
     kanbandoing = KanbanDoing.objects.get(pk = id)
     kanbandoing.delete()
     return redirect(KANBAN_LIST)
 
-@require_http_methods(["GET", "POST"])
 def kanban_done_delete(id):
     kanbandone = KanbanDone.objects.get(pk = id)
     kanbandone.delete()

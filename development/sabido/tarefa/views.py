@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect
 from .forms import TarefaForm
 from .models import Tarefa
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe, require_http_methods
+from django.views.decorators.http import require_safe, require_http_methods, require_GET, require_POST
 
 # Create your views here.
 
-@require_http_methods(["GET", "POST"])
+@require_safe
 def tarefa_list(request):
     context = {'tarefa_list':Tarefa.objects.all()}
     return HttpResponse(render(request, "tarefa/tarefa_list.html", context))
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def tarefa_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,9 +30,9 @@ def tarefa_form(request, id = 0):
             form.save()
         return redirect('/tarefa/list')            
 
-@require_http_methods(["GET", "POST"])
 def tarefa_delete(id):
     tarefa = Tarefa.objects.get(pk = id)
     tarefa.delete()
     return redirect('/tarefa/list')
+
 

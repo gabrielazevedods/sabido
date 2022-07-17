@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect
 from .forms import LembreteForm
 from .models import Lembrete
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe, require_http_methods
+from django.views.decorators.http import require_safe, require_http_methods, require_GET, require_POST
 
 # Create your views here.
 
-@require_http_methods(["GET", "POST"])
+@require_safe
 def lembrete_list(request):
     context = {'lembrete_list':Lembrete.objects.all()}
     return HttpResponse(render(request, "lembrete/lembrete_list.html", context))
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def lembrete_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,7 +30,6 @@ def lembrete_form(request, id = 0):
             form.save()
         return redirect('/lembrete/list')            
 
-@require_http_methods(["GET", "POST"])
 def lembrete_delete(id):
     lembrete = Lembrete.objects.get(pk = id)
     lembrete.delete()

@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect
 from .forms import DisciplinaForm
 from .models import Disciplina
 from django.http import HttpResponse
-from django.views.decorators.http import require_safe, require_http_methods
+from django.views.decorators.http import require_safe, require_http_methods, require_GET, require_POST
 
 # Create your views here.
 
-@require_http_methods(["GET", "POST"])
+@require_safe
 def disciplina_list(request):
     context = {'disciplina_list':Disciplina.objects.all()}
     return HttpResponse(render(request, "disciplina/disciplina_list.html", context))
 
-@require_http_methods(["GET", "POST"])
+@require_http_methods(["GET", "POST", "PUT", "PATCH"])
 def disciplina_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,7 +30,6 @@ def disciplina_form(request, id = 0):
             form.save()
         return redirect('/disciplina/list')            
 
-@require_http_methods(["GET", "POST"])
 def disciplina_delete(id):
     disciplina = Disciplina.objects.get(pk = id)
     disciplina.delete()
