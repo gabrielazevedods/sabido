@@ -30,10 +30,12 @@ def aluno_form(request, id = 0):
             form.save()
         return redirect('/aluno/list')            
 
-def aluno_delete(id):
-    aluno = Aluno.objects.get(pk = id)
-    aluno.delete()
-    return redirect('/aluno/list')
+def aluno_delete(request, id):
+    if request.method == "POST":
+        aluno = Aluno.objects.get(pk = id)
+        aluno.delete()
+        return redirect('/aluno/list')
+
 
 
 

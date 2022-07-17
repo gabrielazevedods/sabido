@@ -30,10 +30,11 @@ def disciplina_form(request, id = 0):
             form.save()
         return redirect('/disciplina/list')            
 
-def disciplina_delete(id):
-    disciplina = Disciplina.objects.get(pk = id)
-    disciplina.delete()
-    return redirect('/disciplina/list')
+def disciplina_delete(request, id):
+    if request.method == "POST":
+        disciplina = Disciplina.objects.get(pk = id)
+        disciplina.delete()
+        return redirect('/disciplina/list')
 
 
 

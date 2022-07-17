@@ -30,9 +30,11 @@ def projeto_form(request, id = 0):
             form.save()
         return redirect('/projeto/list')          
 
-def projeto_delete(id):
-    projeto = Projeto.objects.get(pk = id)
-    projeto.delete()
-    return redirect('/projeto/list')
+def projeto_delete(request, id):
+    if request.method == "POST":
+        projeto = Projeto.objects.get(pk = id)
+        projeto.delete()
+        return redirect('/projeto/list')
+
 
 

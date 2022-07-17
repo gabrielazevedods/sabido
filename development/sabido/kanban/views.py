@@ -74,18 +74,21 @@ def kanban_done_form(request, id = 0):
             form.save()
         return redirect(KANBAN_LIST)        
 
-def kanban_todo_delete(id):
-    kanbantodo = KanbanToDo.objects.get(pk = id)
-    kanbantodo.delete()
-    return redirect(KANBAN_LIST)
+def kanban_todo_delete(request, id):
+    if request.method == "POST":
+        kanbantodo = KanbanToDo.objects.get(pk = id)
+        kanbantodo.delete()
+        return redirect(KANBAN_LIST)
 
-def kanban_doing_delete(id):
-    kanbandoing = KanbanDoing.objects.get(pk = id)
-    kanbandoing.delete()
-    return redirect(KANBAN_LIST)
+def kanban_doing_delete(request, id):
+    if request.method == "POST":
+        kanbandoing = KanbanDoing.objects.get(pk = id)
+        kanbandoing.delete()
+        return redirect(KANBAN_LIST)
 
-def kanban_done_delete(id):
-    kanbandone = KanbanDone.objects.get(pk = id)
-    kanbandone.delete()
-    return redirect(KANBAN_LIST)
+def kanban_done_delete(request, id):
+    if request.method == "POST":
+        kanbandone = KanbanDone.objects.get(pk = id)
+        kanbandone.delete()
+        return redirect(KANBAN_LIST)
 

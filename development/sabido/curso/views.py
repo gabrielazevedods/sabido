@@ -30,8 +30,9 @@ def curso_form(request, id = 0):
             form.save()
         return redirect('/curso/list')            
 
-def curso_delete(id):
-    curso = Curso.objects.get(pk = id)
-    curso.delete()
-    return redirect('/curso/list')
+def curso_delete(request, id):
+    if request.method == "POST":
+        curso = Curso.objects.get(pk = id)
+        curso.delete()
+        return redirect('/curso/list')
 

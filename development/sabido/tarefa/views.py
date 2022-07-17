@@ -30,9 +30,10 @@ def tarefa_form(request, id = 0):
             form.save()
         return redirect('/tarefa/list')            
 
-def tarefa_delete(id):
-    tarefa = Tarefa.objects.get(pk = id)
-    tarefa.delete()
-    return redirect('/tarefa/list')
+def tarefa_delete(request, id):
+    if request.method == "POST":
+        tarefa = Tarefa.objects.get(pk = id)
+        tarefa.delete()
+        return redirect('/tarefa/list')
 
 
