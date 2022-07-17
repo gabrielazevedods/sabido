@@ -179,6 +179,26 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
+            <!-- Nav Item - Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProjetos"
+                    aria-expanded="true" aria-controls="collapseProjetos">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projetos</span>
+                </a>
+                <div id="collapseProjetos" class="collapse" aria-labelledby="headingProjetos"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Menu Projetos</h6>
+                        <a class="collapse-item" href="{% url 'projeto_list' %}">Lista de Projetos</a>
+                        <a class="collapse-item" href="{% url 'projeto_insert' %}">Novo Projeto</a>
+                    </div>
+                </div>
+            </li> 
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
         </ul>
         <!-- End of Sidebar -->
 

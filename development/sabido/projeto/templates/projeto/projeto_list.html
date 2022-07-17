@@ -1,0 +1,43 @@
+{% extends "../landing_page/main.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Nome do projeto</td>
+            <td>Descrição do projeto</td>
+            <td>Coordenador</td>
+            <td>Carga-Horária</td>
+            <td>Data da início do projeto</td>
+            <td>Data de fim do projeto</td>
+            <td>Disciplina</td>
+            <td><a href="{% url 'projeto_insert' %}" class="btn btn-outline-primary"><i class="fa fa-plus"></i>Adicionar Novo Projeto</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for projeto in projeto_list %}
+        <tr>
+            <td>{{projeto.nome}}</td>
+            <td>{{projeto.descricao}}</td>
+            <td>{{projeto.coordenador}}</td>
+            <td>{{projeto.carga_horaria}}</td>
+            <td>{{projeto.data_inicio_projeto}}</td>
+            <td>{{projeto.data_fim_projeto}}</td>
+            <td>{{projeto.disciplina}}</td>
+            <td>
+                <a href="{% url 'projeto_update' projeto.id %}" class="btn text-secondary px-0">
+                    <i class="far fa-edit fa-lg"></i>
+                </a>
+                <form action="{% url 'projeto_delete' projeto.id %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn">
+                        <i class="fa fa-trash-alt fa-lg text-danger float-right"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
+

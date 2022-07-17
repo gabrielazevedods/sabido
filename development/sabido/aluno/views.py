@@ -6,12 +6,12 @@ from django.views.decorators.http import require_safe
 
 # Create your views here.
 
-@require_safe
+# @require_safe
 def aluno_list(request):
     context = {'aluno_list':Aluno.objects.all()}
     return HttpResponse(render(request, "aluno/aluno_list.html", context))
 
-@require_safe
+# @require_safe
 def aluno_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,7 +30,7 @@ def aluno_form(request, id = 0):
             form.save()
         return redirect('/aluno/list')            
 
-@require_safe
+# @require_safe
 def aluno_delete(id):
     aluno = Aluno.objects.get(pk = id)
     aluno.delete()

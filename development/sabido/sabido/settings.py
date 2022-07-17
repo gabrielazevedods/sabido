@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'jquery',
     'lembrete',
     'curso',
-    'kanban'
+    'kanban',
+    'projeto'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"

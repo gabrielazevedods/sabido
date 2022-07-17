@@ -6,12 +6,12 @@ from django.views.decorators.http import require_safe
 
 # Create your views here.
 
-@require_safe
+# @require_safe
 def curso_list(request):
     context = {'curso_list':Curso.objects.all()}
     return HttpResponse(render(request, "curso/curso_list.html", context))
 
-@require_safe
+# @require_safe
 def curso_form(request, id = 0):
     if request.method == "GET":
         if id == 0:  # Se o id passado for 0 (Default), então exibirá um formulário em branco para ser utilizado em uma operação de insert
@@ -30,7 +30,7 @@ def curso_form(request, id = 0):
             form.save()
         return redirect('/curso/list')            
 
-@require_safe
+# @require_safe
 def curso_delete(id):
     curso = Curso.objects.get(pk = id)
     curso.delete()

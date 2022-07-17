@@ -2,6 +2,5 @@ Django>=3.0,<4.0
 psycopg2>=2.8
 django-crispy-forms>=1.14
 crispy-bootstrap5>=0.6
-Pillow>=9.1.1
 django-jquery>=3.1.0
 

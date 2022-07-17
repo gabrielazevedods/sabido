@@ -9,16 +9,18 @@
 
     {{form.nome|as_crispy_field}}
     {{form.descricao|as_crispy_field}}
+    {{form.coordenador|as_crispy_field}}
+    {{form.carga_horaria|as_crispy_field}}
 
     <div class="row">
         <div class="col-md-4">
-            {{form.data_inicio_tarefa|as_crispy_field}} 
+            {{form.data_inicio_projeto|as_crispy_field}} 
         </div>
         <div class="col-md-4">
-            {{form.data_fim_tarefa|as_crispy_field}} 
+            {{form.data_fim_projeto|as_crispy_field}} 
         </div>
         <div class="col-md-8">
-            {{form.projeto|as_crispy_field}}
+            {{form.disciplina|as_crispy_field}}
         </div>
     </div>
     <div class="row">
@@ -26,11 +28,12 @@
             <button type="submit" class="btn btn-success btn-block btn-lg"> <i class="fas fa-database"></i> Salvar </button>
         </div>
         <div class="col-md-4">
-            <a href="{% url 'tarefa_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a lista de Tarefas</a>
+            <a href="{% url 'projeto_list' %}" class="btn btn-secondary btn-block btn-lg"><i class="fa fa-stream"></i>Voltar para a lista de Projetos</a>
         </div>
     </div> 
 </form>
 
 {% endblock content %}
+
 
 

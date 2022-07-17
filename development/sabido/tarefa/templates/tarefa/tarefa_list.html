@@ -16,8 +16,9 @@
         <tr>
             <td>{{tarefa.nome}}</td>
             <td>{{tarefa.descricao}}</td>
-            <td>{{tarefa.data_tarefa}}</td>
-            <td>{{tarefa.disciplina}}</td>
+            <td>{{tarefa.data_inicio_tarefa}}</td>
+            <td>{{tarefa.data_fim_tarefa}}</td>
+            <td>{{tarefa.projeto}}</td>
             <td>
                 <a href="{% url 'tarefa_update' tarefa.id %}" class="btn text-secondary px-0">
                     <i class="far fa-edit fa-lg"></i>
