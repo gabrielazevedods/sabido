@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 projectKey=sabido
 serverUrl=http://labens.dct.ufrn.br/sonarqube
 serverVersion=9.4.0.54424
 dashboardUrl=http://labens.dct.ufrn.br/sonarqube/dashboard?id=sabido
 ceTaskId=AYGN6fLo6XokyAk1hi33
 ceTaskUrl=http://labens.dct.ufrn.br/sonarqube/api/ce/task?id=AYGN6fLo6XokyAk1hi33
+=======
+projectKey=sabido
+serverUrl=http://labens.dct.ufrn.br/sonarqube
+serverVersion=9.4.0.54424
+dashboardUrl=http://labens.dct.ufrn.br/sonarqube/dashboard?id=sabido
+ceTaskId=AYGTKk1E6XokyAk1hi3_
+ceTaskUrl=http://labens.dct.ufrn.br/sonarqube/api/ce/task?id=AYGTKk1E6XokyAk1hi3_
+>>>>>>> 80135c3150c0dc5c3ca3a6b7c27490910f09f787
