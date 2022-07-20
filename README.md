@@ -35,3 +35,9 @@ SABIDO é um assistente acadêmico pessoal desenvolvido com o objetivo de ajudar
 # coverage html
 
 # coverage report
+# GUIA DOCKER-COMPOSE
+## 1- docker-compose build
+## 2- docker-compose up
+## 3- docker-compose down
+## 4- docker ps
+## 5- docker exec -it (container) bash
